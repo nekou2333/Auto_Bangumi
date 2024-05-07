@@ -61,3 +61,39 @@ max-complexity = 10
 [tool.black]
 line-length = 88
 target-version = ['py310', 'py311']
+
+[tool.poetry]
+name = "auto-bangumi"
+version = "0.1.0"
+description = ""
+authors = ["Kabigon Zhao <meowstic.zyx@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+anitopy = "^2.1.1"
+requests = "^2.31.0"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+pysocks = "1.7.1"
+qbittorrent-api = "^2024.3.60"
+six = "^1.16.0"
+passlib = "1.7.4"
+bcrypt = "4.0.1"
+openai = "0.28.1"
+semver = "3.0.1"
+sse-starlette = "1.6.5"
+attrdict = "2.0.1"
+soupsieve = "^2.5"
+sqlmodel = "^0.0.18"
+python-jose = "^3.3.0"
+beautifulsoup4 = "^4.12.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.3"
+black = "^24.4.2"
+pre-commit = "^3.7.0"
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
